@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manda ai BB</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        /* Adicione o CSS revisado aqui */
+    </style>
+</head>
+<body>
+<div>
+  
+    <!-- Container para a imagem principal -->
+    <div class="container">
+        <img src="DIMACZone.svg" alt="Descrição da imagem SVG" class="dimac-zone">
+    </div>
+
+    <!-- Container para o texto -->
+    <div class="container">
+        <div class="texto-alinhado">
+            Seja bem-vindo ao Portal de solicitações de demandas da equipe Multimídia do BB.
+        </div>
+    </div>
+
+    <!-- Botões -->
+    <div class="buttons">
+        <button class="button" onclick="redirectToPage()">Manda aí BB</button>
+        <button class="button" id="pdfButton">Integrantes</button>
+    </div>
+</div>
+    <!-- Container para a imagem logo -->
+    <div class="container">
+        <img src="logo3.svg" alt="Descrição da Imagem" class="imagem-banco">
+    </div>
+
+    <!-- Background -->
+    <div class="fundo"></div>
+    <script>
+        function redirectToPage() {
+            // Substitua 'nova-pagina.html' pelo URL da página para onde deseja redirecionar
+            window.location.href = 'nova-pagina.html';
+        }
+
+        document.getElementById('pdfButton').addEventListener('click', function() {
+            window.open('dimac.pdf', '_blank');
+        });
+        function redirectToPage() {
+    window.location.href = 'pagina1.html'; // Certifique-se de que o nome do arquivo esteja correto
+}
+    </script>
+
+</body>
+</html>
+
