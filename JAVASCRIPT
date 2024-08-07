@@ -1,0 +1,23 @@
+<script>
+// Função para abrir o modal
+document.getElementById('openModalButton').addEventListener('click', function() {
+    document.getElementById('myModal').style.display = 'block';
+});
+
+// Função para fechar o modal
+document.getElementById('closeModal').addEventListener('click', function() {
+    document.getElementById('myModal').style.display = 'none';
+});
+
+// Fecha o modal se o usuário clicar fora do conteúdo do modal
+window.addEventListener('click', function(event) {
+    if (event.target === document.getElementById('myModal')) {
+        document.getElementById('myModal').style.display = 'none';
+    }
+});
+
+// Adicionando a ação do botão Integrantes
+document.getElementById('pdfButton').addEventListener('click', function() {
+    window.open('dimac.pdf', '_blank');
+});
+</script>
